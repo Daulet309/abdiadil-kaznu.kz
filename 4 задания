@@ -1,0 +1,14 @@
+public class Main {
+
+    // Метод 1: Считает и возвращает сумму всех положительных элементов двумерного массива
+    public static int sumOfPositiveElements(int[][] matrix) {
+        int sum = 0;
+        for (int[] row : matrix) {
+            for (int element : row) {
+                if (element > 0) {
+                    sum += element;
+                }
+            }
+        }
+        return sum;
+    }
